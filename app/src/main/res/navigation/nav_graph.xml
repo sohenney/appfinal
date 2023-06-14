@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MyPageFragment">
+
+    <fragment
+        android:id="@+id/MyPageFragment"
+        android:name="com.trashgo.app.fragment.MyPageFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_my_page">
+
+        <action
+            android:id="@+id/action_MyPageFragment_to_MyPageLoginFragment"
+            app:destination="@id/MyPageLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MyPageLoginFragment"
+        android:name="com.trashgo.app.fragment.MyPageLoginFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_my_page_login">
+    </fragment>
+</navigation>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/noticefragment_container2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--sohenney notice 1 페이지 추가 -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="Notice"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:text="New) 분리수거 사이트 연결 업데이트"
+            android:textSize="17dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.076"
+            android:background="@drawable/solid_button"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView2"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="40dp"
+            android:text="안녕하세요 플로거 여러분. 이번 업데이트 사항을 알려드리겠습니다. 이번 업데이트를 통해서 전에 없었던 분리수거 사이트를 연결해두었습니다!
+                                        플로깅을 마친 후 주운 쓰레기들을 분리수거하실 때 어떻게 분리수거 할 지 고민했던 적 있으시죠?
+                                        이제는 그럴 필요가 없어졌습니다. 이제부터는 플로깅을 하신 후에 연결된 분리수거 사이트를 통해서 올바른 분리수거를 실천해봅시다!
+                                        "
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.11" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

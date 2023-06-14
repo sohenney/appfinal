@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--sohenney font 추가-->
+
+    <font android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/nanumgothiccoding_regular"/>
+
+</font-family>

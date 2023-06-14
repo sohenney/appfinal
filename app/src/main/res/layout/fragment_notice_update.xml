@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NoticeUpdateFragment">
+
+    <!--sohenney 공지사항 및 업데이트 소식 탭 추가-->
+    <!--sohenney 공지사항 및 업데이트 소식 디자인 수정-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="20">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/noticeupdatetitle"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:text="Notices and Updates"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="공지사항"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnnotice1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="        New) PLOPLO와 함께하는 여름방학 플로깅 Event!"
+                    android:background="@drawable/solid_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity=""/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnnotice2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="         ploplo ver1.0 배포 안내"
+                    android:background="@drawable/solid_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity=""/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="업데이트 소식"
+                    android:textSize="24sp"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnupdate1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="        New) 분리수거 사이트 연결 업데이트"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/solid_button"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:gravity=""/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnupdate2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/solid_button"
+                    android:gravity=""
+                    android:text="        PLOPLO 앱 인공지능 도입 업데이트 예정"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnupdate3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/solid_button"
+                    android:gravity=""
+                    android:text="        분리수거 정보 사이트"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

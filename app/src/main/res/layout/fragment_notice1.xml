@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/noticefragment_container">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--sohenney notice 1 페이지 추가 -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="Notice"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:text="PLOPLO와 함께하는 여름방학 플로깅 Event!"
+            android:textSize="17dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintVertical_bias="0.076"
+            android:background="@drawable/solid_button"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView2"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="안녕하세요 플로거 여러분! PLOPLO 개발 팀입니다. 저희가 이번 여름 방학을 맞아 플로깅 행사를 진행해보려고 합니다. 무더운 여름날 쓰레기를 추우면 보람찬 기분을 만끽하실 수 있겠죠?
+                                                                                자세한 사항은 아래 기재된 내용을 확인해주세요!"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.101"
+            android:paddingBottom="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"/>
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView3"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="일시: 2023년 6월 14일 수요일 14시"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView2"
+            app:layout_constraintVertical_bias="0.116" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView4"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="장소: 충북대학교 S4-1 주차장 집결"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView3"
+            app:layout_constraintVertical_bias="0.04" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView5"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:text="기타 사항: 플로깅에 필요한 집게, 비닐봉투와 같은 준비물들은 개인이 준비하셔야 합니다.
+                                        * 이 공지는 실제 시행되는 이벤트 공지가 아닙니다."
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/multiAutoCompleteTextView4"
+            app:layout_constraintVertical_bias="0.04" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</FrameLayout>

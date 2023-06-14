@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--sohenney 알림설정 arrays.xml 추가-->
+<resources>
+    <string-array name="ringtones_array">
+        <item>2023 알림음</item>
+        <item>차임벨</item>
+        <item>페이스북 알림음</item>
+        <item>아이폰 알림음</item>
+        <item>뿅뿅 알림음</item>
+    </string-array>
+    <string-array name="vibration_patterns_array">
+        <item>패턴 1</item>
+        <item>패턴 2</item>
+        <item>패턴 3</item>
+    </string-array>
+</resources>

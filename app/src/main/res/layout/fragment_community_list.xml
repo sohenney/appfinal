@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<!--sohenney 커뮤니티 탭 추가/dotom recyclerview 수정-->
+    <!--sohenney 버튼 디자인 크기 수정 -->
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="669dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/communitytitle"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:text="COMMUNITY"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="675dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:name="com.trashgo.app.CommunityFragment"
+                android:layout_width="379dp"
+                android:layout_height="588dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:layoutManager="LinearLayoutManager"
+                tools:context=".fragment.CommunityFragment"
+                tools:listitem="@layout/fragment_community" />
+
+            <android.widget.Button
+
+                android:id="@+id/writebutton"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="280dp"
+                android:layout_marginTop="500dp"
+                android:background="@drawable/solid_button"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+</LinearLayout>

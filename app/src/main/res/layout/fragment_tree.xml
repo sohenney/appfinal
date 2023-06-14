@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#000000"
+    tools:context=".fragment.TreeFragment">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="614dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+
+            android:fontFamily="@font/nanumgothiccoding_regular"
+            android:text="My Tree"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/nanumgothiccoding_regular"
+            android:gravity="right"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+      
+        <ViewFlipper
+            android:id="@+id/imageViewtree"
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="@string/app_name"
+            android:onClick="mytreeClick"
+            android:src="@drawable/treemain" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tap Tree Check My Data"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_weight="20" />
+
+        <android.widget.Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/solid_button"
+            android:text="Button"
+            android:textColor="@color/white"
+
+            />
+
+        <android.widget.Button
+            android:id="@+id/aibutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/solid_button"
+            android:text="ai분리수거"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>
